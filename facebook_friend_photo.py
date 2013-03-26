@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 q = 'SELECT id, url FROM square_profile_pic WHERE id IN (SELECT uid1 FROM friend WHERE uid2=me()) AND size=%d' % args.size
 
-url = 'https://graph.prod.facebook.com/fql'
+url = 'https://graph.facebook.com/fql'
 
 params = urllib.urlencode({
   'access_token': args.access_token,
