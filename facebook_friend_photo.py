@@ -6,11 +6,9 @@ import mimetypes
 import os
 import urllib
 import urllib2
-import urlparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--access_token', required=True)
-parser.add_argument('--owner_cursor_file')
 parser.add_argument('--directory', required=True)
 parser.add_argument('--size', type=int, default=160)
 
